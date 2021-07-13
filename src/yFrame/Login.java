@@ -30,7 +30,7 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        pnlBackground = new javax.swing.JPanel();
         lblDisplay = new javax.swing.JLabel();
         lblExit = new javax.swing.JLabel();
         lblPublicidad2 = new javax.swing.JLabel();
@@ -39,18 +39,11 @@ public class Login extends javax.swing.JFrame {
         lblSlide1 = new javax.swing.JLabel();
         btnNext = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
+        pnlLogin = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowOpened(java.awt.event.WindowEvent evt) {
-                formWindowOpened(evt);
-            }
-        });
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        pnlBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblDisplay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Expand_Arrow_32px.png"))); // NOI18N
         lblDisplay.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -58,7 +51,7 @@ public class Login extends javax.swing.JFrame {
                 lblDisplayMouseClicked(evt);
             }
         });
-        jPanel1.add(lblDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 30, 70));
+        pnlBackground.add(lblDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 30, 70));
 
         lblExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Delete_32px.png"))); // NOI18N
         lblExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -66,19 +59,19 @@ public class Login extends javax.swing.JFrame {
                 lblExitMouseClicked(evt);
             }
         });
-        jPanel1.add(lblExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, 70));
+        pnlBackground.add(lblExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, 70));
 
         lblPublicidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi2.png"))); // NOI18N
-        jPanel1.add(lblPublicidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 100, 1000, 320));
+        pnlBackground.add(lblPublicidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 100, 1000, 320));
 
         lblPublicidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi1.png"))); // NOI18N
-        jPanel1.add(lblPublicidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1000, 320));
+        pnlBackground.add(lblPublicidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1000, 320));
 
         lblSlide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/paloPublic.png"))); // NOI18N
-        jPanel1.add(lblSlide, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 418, 1000, 10));
+        pnlBackground.add(lblSlide, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 418, 1000, 10));
 
         lblSlide1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/paloPublic.png"))); // NOI18N
-        jPanel1.add(lblSlide1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 94, 1000, 10));
+        pnlBackground.add(lblSlide1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 94, 1000, 10));
 
         btnNext.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BACK.png"))); // NOI18N
         btnNext.setBorder(null);
@@ -89,7 +82,7 @@ public class Login extends javax.swing.JFrame {
                 btnNextMouseClicked(evt);
             }
         });
-        jPanel1.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 50, 30));
+        pnlBackground.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 50, 30));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NEXT.png"))); // NOI18N
         btnBack.setBorder(null);
@@ -105,12 +98,27 @@ public class Login extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 50, 30));
+        pnlBackground.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 50, 30));
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnlLogin.setOpaque(false);
+        pnlLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGIN_INGRESO.png"))); // NOI18N
+        pnlLogin.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 270));
+
+        getContentPane().add(pnlLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 250, 270));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login.png"))); // NOI18N
-        jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -202,7 +210,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnNext;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblDisplay;
     private javax.swing.JLabel lblExit;
     private javax.swing.JLabel lblFondo;
@@ -210,5 +218,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel lblPublicidad2;
     private javax.swing.JLabel lblSlide;
     private javax.swing.JLabel lblSlide1;
+    private javax.swing.JPanel pnlBackground;
+    private javax.swing.JPanel pnlLogin;
     // End of variables declaration//GEN-END:variables
 }
