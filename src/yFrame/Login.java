@@ -6,6 +6,7 @@
 package yFrame;
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
+import Class.Slide;
 
 /**
  *
@@ -16,9 +17,12 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    Slide slait;
     public Login() {
         initComponents();
         this.setLocationRelativeTo(null);
+        
+        slait = new Slide();
     }
 
     /**
