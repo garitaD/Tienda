@@ -5,6 +5,7 @@
  */
 package yFrame;
 import AppPackage.AnimationClass;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -52,9 +53,19 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblDisplay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Expand_Arrow_32px.png"))); // NOI18N
+        lblDisplay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDisplayMouseClicked(evt);
+            }
+        });
         jPanel1.add(lblDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, 30, 70));
 
         lblExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Delete_32px.png"))); // NOI18N
+        lblExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblExitMouseClicked(evt);
+            }
+        });
         jPanel1.add(lblExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, 70));
 
         lblPublicidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi2.png"))); // NOI18N
@@ -124,17 +135,34 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNextMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        // TODO add your handling code here:
+        //Hace la animacion apenas inicia la aplicacion
         AnimationClass ac = new AnimationClass();
         ac.jLabelXLeft(0, -1000, 25, 5, lblPublicidad1);
         
         AnimationClass acc = new AnimationClass();
-        acc.jLabelXLeft(1000, 0, 25, 5, lblPublicidad2);
+        acc.jLabelXLeft(1000, 0, 25, 5, lblPublicidad2); 
     }//GEN-LAST:event_formWindowOpened
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void lblExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblExitMouseClicked
+        
+        try {
+            int dialogButton = JOptionPane.YES_NO_OPTION;
+            int result = JOptionPane.showConfirmDialog(null, "Desea salir del sistema?","EXIT",dialogButton);
+            if (result==0) {
+                System.exit(0);
+            }
+        } catch (Exception e) {
+            
+        }
+    }//GEN-LAST:event_lblExitMouseClicked
+
+    private void lblDisplayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDisplayMouseClicked
+        this.setState(yFrame.Login.ICONIFIED);
+    }//GEN-LAST:event_lblDisplayMouseClicked
 
     /**
      * @param args the command line arguments
