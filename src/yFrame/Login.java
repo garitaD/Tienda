@@ -98,6 +98,11 @@ public class Login extends javax.swing.JFrame {
                 btbIngresarMouseClicked(evt);
             }
         });
+        btbIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbIngresarActionPerformed(evt);
+            }
+        });
         pnlLogin.add(btbIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 110, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGIN_INGRESO.png"))); // NOI18N
@@ -243,6 +248,10 @@ public class Login extends javax.swing.JFrame {
             inicio.setVisible(true);
         }
     }//GEN-LAST:event_btbIngresarMouseClicked
+
+    private void btbIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbIngresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btbIngresarActionPerformed
 
     /**
      * @param args the command line arguments
