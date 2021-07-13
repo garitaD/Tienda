@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package yFrame;
+import AppPackage.AnimationClass;
 
 /**
  *
@@ -31,14 +32,21 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblDisplay = new javax.swing.JLabel();
         lblExit = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        lblPublicidad = new javax.swing.JLabel();
+        lblPublicidad2 = new javax.swing.JLabel();
+        lblPublicidad1 = new javax.swing.JLabel();
         lblSlide = new javax.swing.JLabel();
         lblSlide1 = new javax.swing.JLabel();
+        btnNext = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,15 +57,44 @@ public class Login extends javax.swing.JFrame {
         lblExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Delete_32px.png"))); // NOI18N
         jPanel1.add(lblExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, 70));
 
-        jLabel3.setText("jLabel3");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, -1, -1));
-        jPanel1.add(lblPublicidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1000, 320));
+        lblPublicidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi2.png"))); // NOI18N
+        jPanel1.add(lblPublicidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 100, 1000, 320));
+
+        lblPublicidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi1.png"))); // NOI18N
+        jPanel1.add(lblPublicidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1000, 320));
 
         lblSlide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/paloPublic.png"))); // NOI18N
-        jPanel1.add(lblSlide, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 1000, 10));
+        jPanel1.add(lblSlide, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 418, 1000, 10));
 
         lblSlide1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/paloPublic.png"))); // NOI18N
         jPanel1.add(lblSlide1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 94, 1000, 10));
+
+        btnNext.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BACK.png"))); // NOI18N
+        btnNext.setBorder(null);
+        btnNext.setBorderPainted(false);
+        btnNext.setContentAreaFilled(false);
+        btnNext.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnNextMouseClicked(evt);
+            }
+        });
+        jPanel1.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 50, 30));
+
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NEXT.png"))); // NOI18N
+        btnBack.setBorder(null);
+        btnBack.setBorderPainted(false);
+        btnBack.setContentAreaFilled(false);
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackMouseClicked(evt);
+            }
+        });
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 50, 30));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login.png"))); // NOI18N
         jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
@@ -66,6 +103,38 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        // TODO add your handling code here:
+        AnimationClass ac = new AnimationClass();
+        ac.jLabelXRight(-1000, 0, 25, 5, lblPublicidad1);
+        
+        AnimationClass acc = new AnimationClass();
+        acc.jLabelXRight(0, 1000, 25, 5, lblPublicidad2);
+        
+    }//GEN-LAST:event_btnBackMouseClicked
+
+    private void btnNextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNextMouseClicked
+        // TODO add your handling code here:
+        AnimationClass ac = new AnimationClass();
+        ac.jLabelXLeft(0, -1000, 25, 5, lblPublicidad1);
+        
+        AnimationClass acc = new AnimationClass();
+        acc.jLabelXLeft(1000, 0, 25, 5, lblPublicidad2);
+    }//GEN-LAST:event_btnNextMouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        AnimationClass ac = new AnimationClass();
+        ac.jLabelXLeft(0, -1000, 25, 5, lblPublicidad1);
+        
+        AnimationClass acc = new AnimationClass();
+        acc.jLabelXLeft(1000, 0, 25, 5, lblPublicidad2);
+    }//GEN-LAST:event_formWindowOpened
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,12 +172,14 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnNext;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblDisplay;
     private javax.swing.JLabel lblExit;
     private javax.swing.JLabel lblFondo;
-    private javax.swing.JLabel lblPublicidad;
+    private javax.swing.JLabel lblPublicidad1;
+    private javax.swing.JLabel lblPublicidad2;
     private javax.swing.JLabel lblSlide;
     private javax.swing.JLabel lblSlide1;
     // End of variables declaration//GEN-END:variables
