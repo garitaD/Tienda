@@ -105,7 +105,7 @@ public class Login extends javax.swing.JFrame {
         });
         pnlLogin.add(btbIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 110, 40));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LOGIN_INGRESO.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DGB-Login-Ingreso.png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -120,10 +120,10 @@ public class Login extends javax.swing.JFrame {
         pnlBackground.setPreferredSize(new java.awt.Dimension(1000, 500));
         pnlBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblPublicidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi2.png"))); // NOI18N
+        lblPublicidad2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi5.jpg"))); // NOI18N
         pnlBackground.add(lblPublicidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 100, 1000, 320));
 
-        lblPublicidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi1.png"))); // NOI18N
+        lblPublicidad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/publi4.jpg"))); // NOI18N
         pnlBackground.add(lblPublicidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 1000, 320));
 
         lblSlide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/paloPublic.png"))); // NOI18N
@@ -205,10 +205,10 @@ public class Login extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         //Hace la animacion apenas inicia la aplicacion
         AnimationClass ac = new AnimationClass();
-        ac.jLabelXLeft(0, -1000, 25, 5, lblPublicidad1);
+        ac.jLabelXLeft(0, -1000, 8, 5, lblPublicidad1);
         
         AnimationClass acc = new AnimationClass();
-        acc.jLabelXLeft(1000, 0, 25, 5, lblPublicidad2); 
+        acc.jLabelXLeft(1000, 0, 8, 5, lblPublicidad2); 
     }//GEN-LAST:event_formWindowOpened
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

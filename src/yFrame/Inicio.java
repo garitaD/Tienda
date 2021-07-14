@@ -40,6 +40,16 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pnlPerfil = new javax.swing.JPanel();
+        lblPerfil = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         pnlControlPanel = new javax.swing.JPanel();
@@ -86,20 +96,52 @@ public class Inicio extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        pnlPerfil = new javax.swing.JPanel();
-        lblPerfil = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jSeparator3 = new javax.swing.JSeparator();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jSeparator4 = new javax.swing.JSeparator();
         pnlBackground = new javax.swing.JPanel();
         btnSalir = new javax.swing.JButton();
         btnMinimizar = new javax.swing.JButton();
         lblBackground = new javax.swing.JLabel();
+
+        pnlPerfil.setOpaque(false);
+        pnlPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/wc.png"))); // NOI18N
+        pnlPerfil.add(lblPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 130, 160));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/portada.png"))); // NOI18N
+        pnlPerfil.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 950, 120));
+
+        jSeparator3.setBackground(new java.awt.Color(33, 33, 33));
+        jSeparator3.setForeground(new java.awt.Color(33, 33, 33));
+        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        pnlPerfil.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 20, 150));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Email:");
+        pnlPerfil.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("País:");
+        pnlPerfil.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Nombre:");
+        pnlPerfil.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Nombre:");
+        pnlPerfil.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Numero:");
+        pnlPerfil.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
+
+        jSeparator4.setForeground(new java.awt.Color(111, 174, 2));
+        pnlPerfil.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 860, 20));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -295,21 +337,26 @@ public class Inicio extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(111, 174, 2));
         pnlHome.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 810, 10));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/910-003879.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 130, 130));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/product-image.png"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, 130, 130));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/monitor-gaming.png"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 140, 130, 130));
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/bg_rforce_01.png"))); // NOI18N
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 140, 130, 130));
 
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 130, 130));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/05.png"))); // NOI18N
         jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 130, 130));
 
@@ -337,50 +384,6 @@ public class Inicio extends javax.swing.JFrame {
 
         getContentPane().add(pnlHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
-        pnlPerfil.setOpaque(false);
-        pnlPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/wc.png"))); // NOI18N
-        pnlPerfil.add(lblPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 130, 160));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/portada.png"))); // NOI18N
-        pnlPerfil.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 950, 120));
-
-        jSeparator3.setBackground(new java.awt.Color(33, 33, 33));
-        jSeparator3.setForeground(new java.awt.Color(33, 33, 33));
-        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        pnlPerfil.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 20, 150));
-
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("Email:");
-        pnlPerfil.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
-
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("País:");
-        pnlPerfil.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, -1, -1));
-
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("Nombre:");
-        pnlPerfil.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("Nombre:");
-        pnlPerfil.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
-
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Numero:");
-        pnlPerfil.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
-
-        jSeparator4.setForeground(new java.awt.Color(111, 174, 2));
-        pnlPerfil.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 860, 20));
-
-        getContentPane().add(pnlPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
-
         pnlBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Delete_32px.png"))); // NOI18N
@@ -407,7 +410,7 @@ public class Inicio extends javax.swing.JFrame {
         });
         pnlBackground.add(btnMinimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, 40, 40));
 
-        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login.png"))); // NOI18N
+        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/DGB-Login.png"))); // NOI18N
         pnlBackground.add(lblBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
 
         getContentPane().add(pnlBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
@@ -425,6 +428,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void lblControlPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblControlPanelMouseClicked
         slide.jPanelXDerecha(-180, 0, 10, 5, pnlControlPanel);
+        
         slide.jPanelXIzquierda(0, -180, 10, 5, pnlControlPanel);
     }//GEN-LAST:event_lblControlPanelMouseClicked
 
