@@ -72,6 +72,7 @@ public class Login extends javax.swing.JFrame {
 
         txtUsuario.setBackground(new java.awt.Color(33, 33, 33));
         txtUsuario.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtUsuario.setForeground(new java.awt.Color(255, 255, 255));
         txtUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlLogin.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 190, -1));
 
@@ -82,6 +83,7 @@ public class Login extends javax.swing.JFrame {
 
         txtPassword.setBackground(new java.awt.Color(26, 26, 26));
         txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(255, 255, 255));
         txtPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlLogin.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 190, -1));
 
@@ -139,6 +141,11 @@ public class Login extends javax.swing.JFrame {
         btnNext.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnNextMouseClicked(evt);
+            }
+        });
+        btnNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNextActionPerformed(evt);
             }
         });
         pnlBackground.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 440, 50, 30));
@@ -252,6 +259,10 @@ public class Login extends javax.swing.JFrame {
     private void btbIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbIngresarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btbIngresarActionPerformed
+
+    private void btnNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNextActionPerformed
 
     /**
      * @param args the command line arguments

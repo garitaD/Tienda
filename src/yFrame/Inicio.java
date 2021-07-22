@@ -337,7 +337,7 @@ public class Inicio extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(111, 174, 2));
         pnlHome.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 810, 10));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/910-003879.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/g502.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 130, 130));
 
@@ -353,6 +353,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 140, 130, 130));
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/case.png"))); // NOI18N
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 130, 130));
 
@@ -360,15 +361,19 @@ public class Inicio extends javax.swing.JFrame {
         jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 130, 130));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/graficapng.png"))); // NOI18N
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 340, 130, 130));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/g402-hyperion-fury-ultra-fast-fps-gaming-mouse.png"))); // NOI18N
         jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 340, 130, 130));
 
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/MG278_00000.png"))); // NOI18N
         jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 340, 130, 130));
 
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagesProducts/grafica2.png"))); // NOI18N
         jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(111, 174, 2)));
         pnlHome.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, 130, 130));
 
